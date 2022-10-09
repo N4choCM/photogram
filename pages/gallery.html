@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galería con las fotos más gustadas de Photogram, tu blog de fotografía." />
+  <meta name="author" content="Nacho Campos Martí" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="shortcut icon" href="/assets/logo.png" type="image/x-png" />
+  <title>Galería</title>
+</head>
+
+<body class="d-flex flex-column justify-content-between" data-bs-spy="scroll" data-bs-target="#gallery"
+  data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+  <header class="sticky-top">
+    <nav class="navbar fixed-top navbar1 navbar-expand-lg">
+      <div class="container">
+        <img src="/assets/logo.png" class="logo" alt="logo" id="logo-photogram">
+        <a class="navbar-brand navbar1" href="#">Photogram</a>
+        <button class="navbar-toggler navbar1" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon navbar1"></span>
+        </button>
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header offcanvasnav">
+            <img src="/assets/logo.png" alt="logo" id="logo-toggle">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Photogram
+            </h5>
+            <button type="button" class="btn-close offcanvasnav" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body offcanvasnav expand-md pb-3">
+            <ul class="navbar-nav justify-content-end text-center text-lg-end flex-grow-1 pe-3 mt-3">
+              <li class="nav-item me-1">
+                <a class="nav-link active link navbar-text" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item nav-item-padding">
+                <a class="nav-lin link navbar-text" aria-current="page" href="#">Conócenos</a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link link navbar-text" aria-current="page" href="/pages/gallery.html">Galería</a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link link navbar-text" href="/pages/contact.html">Contacto</a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link link navbar-text" aria-current="page" href="#" data-bs-toggle="modal"
+                  data-bs-target="#suscription" class="btn btn-primary btn-sm m-1 btn-nav" type="submit">Suscríbete</a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link link  navbar-text" href="/pages/login.html">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+                id="search-text" />
+
+              <button class="btn btn-primary" id="search" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="gallery" class="my-4">
+      <br />
+      <h3 class="text-center">Las 24 fotos más gustadas de 2022...</h3>
+    </section>
+    <div class="container mb-5">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalNature4">
+              <img src="/assets/nature4.jpg" class="card-img-top img-gallery rounded shadow" alt="Canadá"
+                title="Canadá" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-success">Naturaleza</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>106k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalNature2">
+              <img src="/assets/nature2.jpg" class="card-img-top img-gallery rounded shadow" alt="Noruega" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-success">Naturaleza</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>97k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalMusic1">
+              <img src="/assets/music1.jpg" class="card-img-top img-gallery rounded shadow" alt="Micrófono"
+                title="Micrófono" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-warning">Música</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>95k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalMusic2">
+              <img src="/assets/music2.jpg" class="card-img-top img-gallery rounded shadow" alt="Guitarra"
+                title="Guitarra" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-warning">Música</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>94k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalSport1">
+              <img src="/assets/sport1.jpg" class="card-img-top img-gallery rounded shadow" alt="Surf" title="Surf" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-light">Deporte</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>89k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalSport2">
+              <img src="/assets/sport2.jpg" class="card-img-top img-gallery rounded shadow" alt="MTB" title="MTB" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-light">Deporte</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>87k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalAnimals1">
+              <img src="/assets/animals1.jpg" class="card-img-top img-gallery rounded shadow" alt="Elefante"
+                title="Elefante" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-primary">Fauna</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>86k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalSport4">
+              <img src="/assets/sport4.jpg" class="card-img-top img-gallery rounded shadow" alt="Basketball"
+                title="Basketball" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-light">Deporte</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>86k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalFood4">
+              <img src="/assets/food4.jpg" class="card-img-top img-gallery rounded shadow" alt="Burrito"
+                title="Burrito" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-danger">Comida</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>81k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalNature1">
+              <img src="/assets/nature1.jpg" class="card-img-top img-gallery rounded shadow" alt="Polo Norte"
+                title="Polo Norte" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-success">Naturaleza</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>78k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalNature3">
+              <img src="/assets/nature3.jpg" class="card-img-top img-gallery rounded shadow" alt="Aurora Boreal"
+                title="Aurora Boreal" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-success">Naturaleza</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>75k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalAnimals2">
+              <img src="/assets/animals2.jpg" class="card-img-top img-gallery rounded shadow" alt="Tigres"
+                title="Tigres" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-primary">Fauna</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>74k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalFlowers1">
+              <img src="/assets/flowers1.jpg" class="card-img-top img-gallery rounded shadow" alt="Margaritas"
+                title="Margaritas" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-info">Flora</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>68k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalAnimals3">
+              <img src="/assets/animals3.jpg" class="card-img-top img-gallery rounded shadow" alt="Conejos"
+                title="Conejos" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-primary">Fauna</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>68k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalSport3">
+              <img src="/assets/sport3.jpg" class="card-img-top img-gallery rounded shadow" alt="Running"
+                title="Running" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-light ms-1">Deporte</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>66k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalFlowers2">
+              <img src="/assets/flowers2.jpg" class="card-img-top img-gallery rounded shadow" alt="Flores amarillas"
+                title="Flores amarillas" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-info">Flora</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>56k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalFlowers3">
+              <img src="/assets/flowers3.jpg" class="card-img-top img-gallery rounded shadow" alt="Flores naranjas"
+                title="Flores naranjas" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-info">Flora</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>55k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalFlowers4">
+              <img src="/assets/flowers4.jpg" class="card-img-top img-gallery rounded shadow" alt="Rosa" title="Rosa" />
+            </a>
+            <div class="d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-info">Flora</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>53k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalMusic4">
+              <img src="/assets/music4.jpg" class="card-img-top img-gallery rounded shadow" alt="Concierto"
+                title="Concierto" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-warning">Música</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>50k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalFood3">
+              <img src="/assets/food3.jpg" class="card-img-top img-gallery rounded shadow" alt="Pancake"
+                title="Pancake" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-danger">Comida</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>38k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalFood2">
+              <img src="/assets/food2.jpg" class="card-img-top img-gallery rounded shadow" alt="Fruta" title="Fruta" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-danger">Comida</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>38k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalAnimals4">
+              <img src="/assets/animals4.jpg" class="card-img-top img-gallery rounded shadow" alt="Pájaros"
+                title="Pájaros" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-primary">Fauna</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>35k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalMusic3">
+              <img src="/assets/music3.jpg" class="card-img-top img-gallery rounded shadow" alt="Tocadiscos"
+                title="Tocadiscos" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-warning">Música</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>31k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="no-border">
+            <a data-bs-toggle="modal" data-bs-target="#modalFood1">
+              <img src="/assets/food1.jpg" class="card-img-top img-gallery rounded shadow" alt="Cucharas"
+                title="Cucharas" />
+            </a>
+            <div class="row d-flex px-2 py-1">
+              <div class="col">
+                <span class="badge rounded-pill text-bg-danger">Comida</span>
+              </div>
+              <div class="col d-flex justify-content-end gap-2 gap-md-1 gap-lg-2 align-items-center me-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span><small>30k</small></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <svg id="red-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star" viewBox="0 0 16 16">
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-2">
+          <img class="footer-items" id="logo-footer" src="/assets/logo.png" alt="Logo" title="Logo" />
+        </div>
+        <div class="col-12 col-md-2">
+          <a href="#"><i class="bi bi-facebook icon-photogram"></i></a>
+        </div>
+        <div class="col-12 col-md-2">
+          <a href="#"><i class="bi bi-twitter icon-photogram"></i></a>
+        </div>
+        <div class="col-12 col-md-2">
+          <a href="#"><i class="bi bi-linkedin icon-photogram"></i></a>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <p class="footer-items text-center text-md-end">
+            ¡Ya somos más de dos millones de seguidores! ¿A qué esperas para unirte a nuestra comunidad? Photogram es
+            muy fácil de usar y, además, es el único sitio del mundo donde, además de compartir tus maravillosas fotos,
+            ¡conocerás las últimas novedades del mundo de la fotografía!
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-12">
+          <p class="footer-items">
+            <small>Photogram S.A. &copy; Todos los derechos reservados</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal: es buena práctica colocarlo bajo el footer -->
+  <div class="modal fade" id="modalNature1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/nature1.jpg" alt="Polo norte" title="Polo Norte" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalNature2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/nature2.jpg" alt="Bosque" title="Bosque" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalNature3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/nature3.jpg" alt="Aurora Boreal" title="Aurora Boreal" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalNature4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/nature4.jpg" alt="Canadá" title="Canadá" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalSport1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/sport1.jpg" alt="Surf" title="Surf" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalSport2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/sport2.jpg" alt="MTB" title="MTB" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalSport3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/sport3.jpg" alt="Running" title="Running" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalSport4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/sport4.jpg" alt="Baloncesto" title="Baloncesto" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalMusic1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/music1.jpg" alt="Micrófono" title="Micrófono" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalMusic2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/music2.jpg" alt="Guitarra" title="Guitarra" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalMusic3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/music3.jpg" alt="Tocadiscos" title="Tocadiscos" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalMusic4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/music4.jpg" alt="Concierto" title="Concierto" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalAnimals1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/animals1.jpg" alt="Elefante" title="Elefante" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalAnimals2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/animals2.jpg" alt="Tigres" title="Tigres" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalAnimals3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/animals3.jpg" alt="Conejos" title="Conejos" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalAnimals4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/animals4.jpg" alt="Pájaros" title="Pájaros" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalFood1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/food1.jpg" alt="Cucharas" title="Cucharas" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalFood2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/food2.jpg" alt="Fruta" title="Fruta" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalFood3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/food3.jpg" alt="Pancake" title="Pancake" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalFood4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/food4.jpg" alt="Burrito" title="Burrito" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalFlowers1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/flowers1.jpg" alt="Margaritas" title="Margaritas" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalFlowers2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/flowers2.jpg" alt="Flores amarillas" title="Flores amarillas" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalFlowers3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/flowers3.jpg" alt="Flores naranjas" title="Flores naranjas" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalFlowers4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <img class="img-gallery" src="/assets/flowers4.jpg" alt="Rosa" title="Rosa" />
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo con la información para la descarga
+            (deberás atribuir al autor).
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="suscription" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            <img src="/assets/logo.png" width="100" alt="logo" />
+            Suscripción
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Ingresa tu email</label>
+          </div>
+          <div class="alert alert-warning text-center" role="alert">
+            Te enviaremos un correo de confirmacion.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" id="btn-modal">¡Suscripción!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (() => {
+      "use strict";
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll(".needs-validation");
+      // Loop over them and prevent submission
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
+  <script src="https://use.fontawesome.com/c2813ccf5b.js"></script>
+</body>
+
+</html>
