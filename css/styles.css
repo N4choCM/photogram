@@ -67,11 +67,7 @@ a {
 }
 
 #logo-photogram {
-    width: 5%;
-}
-
-#logo-toggle{
-    width: 25%;
+    width: 80px;
 }
 
 .navbar-text {
@@ -86,6 +82,11 @@ a {
     padding: 8px !important;
 }
 
+#title-font{
+    font-family: 'Comforter Brush', cursive;
+    font-size: 2rem;
+    padding-left: 10px;
+}
 
 /* INDEX */
 
@@ -274,7 +275,7 @@ textarea {
 }
 
 #logo-footer {
-    width: 45%;
+    width: 75px;
 }
 
 .icon-photogram {
