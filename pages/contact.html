@@ -14,61 +14,60 @@
     <title>Contacto</title>
 </head>
 
-<body class="d-flex flex-column justify-content-between" data-bs-spy="scroll" data-bs-target="#gallery"
+<body class="d-flex flex-column justify-content-between min-vh-100" data-bs-spy="scroll" data-bs-target="#gallery"
     data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <header class="sticky-top">
         <nav class="navbar fixed-top navbar1 navbar-expand-lg">
-          <div class="container">
-            <img src="/assets/logo.png" class="logo" alt="logo" id="logo-photogram">
-            <a class="navbar-brand navbar1" href="#">Photogram</a>
-            <button class="navbar-toggler navbar1" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon navbar1"></span>
-            </button>
-            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header offcanvasnav">
-                <img src="/assets/logo.png" alt="logo" id="logo-toggle">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  Photogram
-                </h5>
-                <button type="button" class="btn-close offcanvasnav" data-bs-dismiss="offcanvas"
-                  aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body offcanvasnav expand-md pb-3">
-                <ul class="navbar-nav justify-content-end text-center text-lg-end flex-grow-1 pe-3 mt-3">
-                  <li class="nav-item me-1">
-                    <a class="nav-link active link navbar-text" aria-current="page" href="/index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item nav-item-padding">
-                    <a class="nav-lin link navbar-text" aria-current="page" href="#">Conócenos</a>
-                  </li>
-                  <li class="nav-item me-1">
-                    <a class="nav-link link navbar-text" aria-current="page" href="/pages/gallery.html">Galería</a>
-                  </li>
-                  <li class="nav-item me-1">
-                    <a class="nav-link link navbar-text" href="/pages/contact.html">Contacto</a>
-                  </li>
-                  <li class="nav-item me-1">
-                    <a class="nav-link link navbar-text" aria-current="page" href="#" data-bs-toggle="modal"
-                      data-bs-target="#suscription" class="btn btn-primary btn-sm m-1 btn-nav" type="submit">Suscríbete</a>
-                  </li>
-                  <li class="nav-item me-1">
-                    <a class="nav-link link  navbar-text" href="/pages/login.html">Login</a>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
-                    id="search-text" />
-    
-                  <button class="btn btn-primary" id="search" type="submit">
-                    Buscar
-                  </button>
-                </form>
-              </div>
+            <div class="container">
+                <img src="/assets/logo.png" class="logo" alt="logo" id="logo-photogram" />
+                <a class="navbar-brand navbar1" href="#">Photogram</a>
+                <button class="navbar-toggler navbar1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon navbar1"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header offcanvasnav">
+                        <img src="/assets/logo.png" alt="logo" id="logo-toggle" />
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Photogram
+                        </h5>
+                        <button type="button" class="btn-close offcanvasnav" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body offcanvasnav expand-md pb-3">
+                        <ul class="navbar-nav justify-content-end text-center text-lg-end flex-grow-1 pe-3 mt-3 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link active link navbar-text" aria-current="page" href="/index.html"><i
+                                        class="bi bi-house-door"></i> Inicio</a>
+                            </li>
+                            <li class="nav-item nav-item-padding">
+                                <a class="nav-lin link navbar-text" aria-current="page" href="#"><i
+                                        class="bi bi-people"></i> Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link link navbar-text" aria-current="page" href="/pages/gallery.html"><i
+                                        class="bi bi-camera"></i> Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link navbar-text" href="/pages/contact.html"><i
+                                        class="bi bi-envelope"></i> Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link navbar-text" aria-current="page" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#suscription" class="btn btn-primary btn-sm m-1 btn-nav"
+                                    type="submit"><i class="bi bi-emoji-smile"></i> Suscríbete</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link navbar-text" href="/pages/login.html"><i
+                                        class="bi bi-box-arrow-in-right"></i> Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </nav>
-      </header>
+    </header>
     <main>
         <section id="contact" class="mb-4 mt-5 ancla">
             <div class="container">
@@ -128,8 +127,8 @@
                     <a href="#"><i class="bi bi-linkedin icon-photogram"></i></a>
                 </div>
                 <div class="col-12 col-md-4 mt-5">
-                    <p class="footer-items text-center text-md-end">
-                        ¡Ya somos más de dos millones de seguidores! ¿A qué esperas para unirte a nuestra comunidad?
+                    <p class=" text-center text-md-end">
+                        ¡Ya somos más de dos millones de usuarios! ¿A qué esperas para unirte a nuestra comunidad?
                         Photogram es muy fácil de usar y, además, es el único sitio del mundo donde, además de compartir
                         tus maravillosas fotos, ¡conocerás las últimas novedades del mundo de la fotografía!
                     </p>
@@ -137,7 +136,7 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-12">
-                    <p class="footer-items">
+                    <p>
                         <small>Photogram S.A. &copy; Todos los derechos reservados</small>
                     </p>
                 </div>

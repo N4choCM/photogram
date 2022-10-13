@@ -8,8 +8,8 @@
 .ancla:before {
     display: block;
     content: " ";
-    margin-top: -74px;
-    height: 74px;
+    margin-top: -90px;
+    height: 72px;
 }
 
 body {
@@ -122,6 +122,52 @@ a {
     color: #EEEEEE;
     transform: rotate(360deg);
 }
+
+#btn-article{
+    background-color: #F4B400;
+    color: #EEEEEE;
+    border-color: #393E46;
+    font-weight: bold;
+}
+
+#btn-article:hover{
+    border-color: #F4B400;
+    background-color: #393E46;
+}
+
+#card-title{
+    color: black !important;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#card-text{
+    color: black !important;
+    text-align: justify;
+}
+
+.page-link{
+    color: #393E46 !important;
+}
+
+#active-page{
+    background-color: #F4B400 !important;
+    color: #EEEEEE !important;
+    border: 1px solid #393E46 !important;
+    font-weight: bold !important;
+}
+
+#pills:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.img-ad{
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
 
 /* GALLERY */
 
