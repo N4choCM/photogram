@@ -33,102 +33,104 @@
     data-bs-smooth-scroll="true"
     tabindex="0"
   >
-    <header class="sticky-top">
-      <nav class="navbar fixed-top navbar1 navbar-expand-lg">
-        <div class="container">
-          <img
-            src="/assets/logo.png"
-            class="logo"
-            alt="logo"
-            id="logo-photogram"
-          />
-          <a id="title-font" class="navbar-brand navbar1" href="/index.html">Photogram</a>
-          <button
-            class="navbar-toggler navbar1"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon navbar1"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header offcanvasnav">
-              <img src="/assets/logo.png" alt="logo" id="logo-photogram" />
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Photogram
-              </h5>
-              <button
-                type="button"
-                class="btn-close offcanvasnav"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body offcanvasnav expand-md pb-3">
-              <ul
-                class="navbar-nav justify-content-end text-center text-lg-end flex-grow-1 pe-3 mt-3 gap-3"
-              >
-                <li class="nav-item">
-                  <a
-                    class="nav-link active link navbar-text"
-                    aria-current="page"
-                    href="/index.html"
-                    ><i class="bi bi-house-door"></i> Inicio</a
-                  >
-                </li>
-                <li class="nav-item nav-item-padding">
-                  <a
-                    class="nav-lin link navbar-text"
-                    aria-current="page"
-                    href="#"
-                    ><i class="bi bi-people"></i> Sobre nosotros</a
-                  >
-                </li>
-                <li class="nav-item me-1">
-                  <a
-                    class="nav-link link navbar-text"
-                    aria-current="page"
-                    href="/pages/gallery.html"
-                    ><i class="bi bi-camera"></i> Galería</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link link navbar-text"
-                    href="/pages/contact.html"
-                    ><i class="bi bi-envelope"></i> Contacto</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link navbar-text" href="/pages/login.html"
-                    ><i class="bi bi-box-arrow-in-right"></i> Login</a
-                  >
-                </li>
-                <li id="modal-navbar-border" class="nav-item">
-                  <a
-                    id="modal-navbar"
-                    class="nav-link link navbar-text"
-                    aria-current="page"
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#suscription"
-                    class="btn btn-primary btn-sm m-1 btn-nav"
-                    type="submit"
-                    ><i class="bi bi-emoji-smile"></i> Suscríbete</a
-                  >
-                </li>
-              </ul>
-            </div>
+  <header class="sticky-top">
+    <nav class="navbar fixed-top navbar1 navbar-expand-lg">
+      <div class="container">
+        <a href="/index.html"><img
+          src="/assets/logo.png"
+          class="logo"
+          alt="logo"
+          id="logo-photogram"
+        /></a>
+        <a id="title-font" class="navbar-brand navbar1" href="/index.html"
+          >Photogram</a
+        >
+        <button
+          class="navbar-toggler navbar1"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon navbar1"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header offcanvasnav">
+            <a href="/index.html"><img src="/assets/logo.png" alt="logo" id="logo-photogram" /></a>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Photogram
+            </h5>
+            <button
+              type="button"
+              class="btn-close offcanvasnav"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body offcanvasnav expand-md pb-3">
+            <ul
+              class="navbar-nav justify-content-end text-center text-lg-end flex-grow-1 pe-3 mt-3 gap-3"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active link navbar-text"
+                  aria-current="page"
+                  href="/index.html"
+                  ><i class="bi bi-house-door"></i> Inicio</a
+                >
+              </li>
+              <li class="nav-item nav-item-padding">
+                <a
+                  class="nav-lin link navbar-text"
+                  aria-current="page"
+                  href="/pages/sobre_nosotros.html"
+                  ><i class="bi bi-people"></i> Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item me-1">
+                <a
+                  class="nav-link link navbar-text"
+                  aria-current="page"
+                  href="/pages/gallery.html"
+                  ><i class="bi bi-camera"></i> Galería</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link navbar-text"
+                  href="/pages/contact.html"
+                  ><i class="bi bi-envelope"></i> Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link navbar-text" href="/pages/login.html"
+                  ><i class="bi bi-box-arrow-in-right"></i> Login</a
+                >
+              </li>
+              <li id="modal-navbar-border" class="nav-item">
+                <a
+                  id="modal-navbar"
+                  class="nav-link link navbar-text"
+                  aria-current="page"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscription"
+                  class="btn btn-primary btn-sm m-1 btn-nav"
+                  type="submit"
+                  ><i class="bi bi-emoji-smile"></i> Suscríbete</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
     <main>
       <div class="container">
         <div class="row mt-5 mb-3">
