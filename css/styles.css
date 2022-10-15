@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 .ancla:before {
@@ -175,7 +174,21 @@ a {
     text-align: center;
 }
 
-/* noticia */
+/* SOBRE NOSOTROS */
+.photogram-resaltado{
+    color: #F4B400;
+  }
+
+  .ancla-contacto{
+    color: #00ADB5;
+    font-weight: bold;
+  }
+
+  .ancla-contacto:hover{
+    color: #F4B400;
+  }
+
+/* NOTICIAS */
 .img-noticia {
     width: 100%;
     height: 50vh;

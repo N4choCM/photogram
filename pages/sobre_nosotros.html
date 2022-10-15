@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conoce al equipo que hay detrás de Photogram, tu blog de fotografía."
+    />
+    <meta name="author" content="Grupo 3" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sobre nosotros</title>
+  </head>
+  <body class="d-flex flex-column justify-content-between vh-100">
+    <header class="sticky-top">
+      <nav class="navbar fixed-top navbar1 navbar-expand-lg">
+        <div class="container">
+          <a href="/index.html"
+            ><img
+              src="/assets/logo.png"
+              class="logo"
+              alt="logo"
+              id="logo-photogram"
+          /></a>
+          <a id="title-font" class="navbar-brand navbar1" href="/index.html"
+            >Photogram</a
+          >
+          <button
+            class="navbar-toggler navbar1"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon navbar1"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header offcanvasnav">
+              <img src="/assets/logo.png" alt="logo" id="logo-photogram" />
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Photogram
+              </h5>
+              <button
+                type="button"
+                class="btn-close offcanvasnav"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body offcanvasnav expand-md pb-3">
+              <ul
+                class="navbar-nav justify-content-end text-center text-lg-end flex-grow-1 pe-3 mt-3 gap-3"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active link navbar-text"
+                    aria-current="page"
+                    href="/index.html"
+                    ><i class="bi bi-house-door"></i> Inicio</a
+                  >
+                </li>
+                <li class="nav-item nav-item-padding">
+                  <b
+                    ><a
+                      class="nav-lin link navbar-text"
+                      aria-current="page"
+                      href="#"
+                      ><i class="bi bi-people"></i> Sobre nosotros</a
+                    ></b
+                  >
+                </li>
+                <li class="nav-item me-1">
+                  <a
+                    class="nav-link link navbar-text"
+                    aria-current="page"
+                    href="/pages/gallery.html"
+                    ><i class="bi bi-camera"></i> Galería</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link link navbar-text"
+                    href="/pages/contact.html"
+                    ><i class="bi bi-envelope"></i> Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link navbar-text" href="/pages/login.html"
+                    ><i class="bi bi-box-arrow-in-right"></i> Login</a
+                  >
+                </li>
+                <li id="modal-navbar-border" class="nav-item">
+                  <a
+                    id="modal-navbar"
+                    class="nav-link link navbar-text"
+                    aria-current="page"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#suscription"
+                    class="btn btn-primary btn-sm m-1 btn-nav"
+                    type="submit"
+                    ><i class="bi bi-emoji-smile"></i> Suscríbete</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="text-center color fw-bold mt-5 mb-3 photogram-resaltado">
+          Photogram
+        </h1>
+        <p class="text-center mb-5">
+          <b class="photogram-resaltado"> Photogram</b> es un equipo de
+          fotografía que dio inicio el 27 de septiembre de 2021. Dicho equipo
+          está integrado por cuatro jóvenes: Nacho Campos Martí, Nicolás
+          Rodríguez, Rocío Ávila y Martín Baigorria. Juntos, llevamos a cabo el
+          objetivo común de compartir nuestro conocimiento fotográfico con la
+          comunidad, todo ello siempre con
+          <b class="photogram-resaltado"
+            >responsabilidad, entrega y compañerismo.</b
+          >
+          Esperamos que os sintáis aquí como en casa y, si en algún momento
+          necesitáis cualquier cosa, no olvidéis que podeís
+          <a class="ancla-contacto" href="/pages/contact.html"
+            >contactar con nosotros.</a
+          >
+        </p>
+        <div class="row mb-5">
+          <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <div class="text-center">
+              <img
+                src="/assets/sobre_nosotros/nacho.jpeg"
+                class="rounded-circle"
+                width="100%"
+                height="100%"
+                alt="Nacho Campos Martí"
+              />
+              <div class="text-center mt-2">
+                <h5 class="mb-1 photogram-resaltado fw-bold">Nacho Campos Martí</h5>
+                <small>Editor de vídeos</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <div class="text-center mb-3">
+              <img
+                src="/assets/sobre_nosotros/nico.jpg"
+                class="rounded-circle"
+                width="100%"
+                height="100%"
+                alt="Nico rodriguez"
+              />
+              <div class="text-center mt-1">
+                <h5 class="fw-bold photogram-resaltado mb-1">Nicolás Rodríguez</h5>
+                <small>Fotógrafo de interiores</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+            <div class="text-center">
+              <img
+                src="/assets/sobre_nosotros/rocio.jpeg"
+                class="rounded-circle"
+                width="100%"
+                height="100%"
+                alt="Rocio Avila"
+              />
+              <div class="text-center">
+                <h5 class="fw-bold photogram-resaltado mb-1">Rocío Ávila</h5>
+                <small>Especialista en drones</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+            <div class="text-center">
+              <img
+                src="/assets/sobre_nosotros/martin.jpeg"
+                class="rounded-circle"
+                width="100%"
+                height="100%"
+                alt="Martin Baigorria"
+              />
+              <div class="text-center">
+                <h5 class="fw-bold photogram-resaltado mt-3 mb-1">Martín Baigorria</h5>
+                <small>Especialista en cortos de animación</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-2">
+            <a href="/index.html"
+              ><img
+                class="footer-items"
+                id="logo-footer"
+                src="/assets/logo.png"
+                alt="Logo"
+                title="Logo"
+            /></a>
+          </div>
+          <div class="col-12 col-md-2">
+            <a href="/pages/error.html"
+              ><i class="bi bi-facebook icon-photogram"></i
+            ></a>
+          </div>
+          <div class="col-12 col-md-2">
+            <a href="/pages/error.html"
+              ><i class="bi bi-twitter icon-photogram"></i
+            ></a>
+          </div>
+          <div class="col-12 col-md-2">
+            <a href="/pages/error.html"
+              ><i class="bi bi-linkedin icon-photogram"></i
+            ></a>
+          </div>
+          <div class="col-12 col-md-4 mt-5">
+            <p class="text-center text-md-end">
+              ¡Ya somos más de dos millones de usuarios! ¿A qué esperas para
+              unirte a nuestra comunidad? Photogram es muy fácil de usar y,
+              además, es el único sitio del mundo donde, además de compartir tus
+              maravillosas fotos, ¡conocerás las últimas novedades del mundo de
+              la fotografía!
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12">
+            <p>
+              <small>Photogram S.A. &copy; Todos los derechos reservados</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="suscription"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <img src="/assets/logo.png" width="100" alt="logo" />
+              Suscripción
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                maxlength="85"
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Ingresa tu email</label>
+            </div>
+            <div class="alert alert-warning text-center" role="alert">
+              Te enviaremos un correo de confirmación.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="btn-modal">
+              ¡Suscripción!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
