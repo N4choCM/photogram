@@ -250,7 +250,7 @@ textarea {
 }
 
 .crea-cuenta:hover {
-    color: #F4B400;
+    color: #EEEEEE;
 }
 
 #btn-fb {
@@ -273,14 +273,6 @@ textarea {
 
 #btn-google:hover {
     background-color: #F4B400 !important;
-}
-
-#emailHelp {
-    color: #EEEEEE;
-}
-
-#emailHelp:hover {
-    color: #F4B400 !important;
 }
 
 /* FOOTER */
