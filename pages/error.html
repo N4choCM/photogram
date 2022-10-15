@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Inicia sesión o regístrate en Photogram, tu blog de fotografía."
+      content="Photogram es tu blog de fotografía. Si quieres estar al tanto de las últimas noticias y compartir tus mejores fotos, 
+          ¡aquí tienes tu casa!."
     />
     <meta name="author" content="Nacho Campos Martí" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -22,17 +23,9 @@
       href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap"
       rel="stylesheet"
     />
-    <title>Inicia Sesión</title>
+    <title>Photogram</title>
   </head>
-
-  <body
-    class="d-flex flex-column justify-content-between min-vh-100"
-    data-bs-spy="scroll"
-    data-bs-target="#gallery"
-    data-bs-root-margin="0px 0px -40%"
-    data-bs-smooth-scroll="true"
-    tabindex="0"
-  >
+  <body class="d-flex flex-column justify-content-between vh-100">
     <header class="sticky-top">
       <nav class="navbar fixed-top navbar1 navbar-expand-lg">
         <div class="container">
@@ -75,11 +68,13 @@
                 class="navbar-nav justify-content-end text-center text-lg-end flex-grow-1 pe-3 mt-3 gap-3"
               >
                 <li class="nav-item">
-                  <a
-                    class="nav-link active link navbar-text"
-                    aria-current="page"
-                    href="/index.html"
-                    ><i class="bi bi-house-door"></i> Inicio</a
+                  <b
+                    ><a
+                      class="nav-link active link navbar-text"
+                      aria-current="page"
+                      href="/index.html"
+                      ><i class="bi bi-house-door"></i> Inicio</a
+                    ></b
                   >
                 </li>
                 <li class="nav-item nav-item-padding">
@@ -106,12 +101,8 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <b
-                    ><a
-                      class="nav-link link navbar-text"
-                      href="/pages/login.html"
-                      ><i class="bi bi-box-arrow-in-right"></i> Login</a
-                    ></b
+                  <a class="nav-link link navbar-text" href="/pages/login.html"
+                    ><i class="bi bi-box-arrow-in-right"></i> Login</a
                   >
                 </li>
                 <li id="modal-navbar-border" class="nav-item">
@@ -134,91 +125,34 @@
       </nav>
     </header>
     <main>
-      <section id="login" class="my-4 ancla">
-        <div class="container">
-          <div class="row">
-            <div class="col text-uppercase text-center mb-5">
-              <br />
-              <h1>Inicia sesión</h1>
-            </div>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-12 col-md-6 text-center">
+            <h3 class="mb-5">
+              ¡Parece que no hemos encontrado lo que buscabas!
+            </h3>
+            <h5 class="mb-5">
+              Estamos trabajando para que pronto encuentres todo lo que
+              necesites
+            </h5>
+            <h6 class="mb-5">Recuerda que siempre puedes volver a inicio...</h6>
+            <a href="/index.html" id="btn-404">Volver a inicio</a>
+            <h6 class="my-5">¡O contactar con nosotros!</h6>
+            <a href="/pages/contact.html" id="btn-404"
+              >Contactar con nosotros</a
+            >
           </div>
-          <div class="row row-cols-1 row-cols-md-2 g-4 my-2">
-            <div class="col-12 col-md-6 mb-3">
-              <form class="row needs-validation" novalidate>
-                <div class="col-12 mb-3">
-                  <input
-                    maxlength="85"
-                    type="email"
-                    class="form-control"
-                    placeholder="example@example.com"
-                    required
-                  />
-                </div>
-                <div class="col-12 mb-3">
-                  <input
-                    maxlength="85"
-                    type="password"
-                    class="form-control"
-                    placeholder="Ingresa tu contraseña"
-                    required
-                    name="password"
-                  />
-                </div>
-                <div class="col-12 mb-3">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modalcontraseña"
-                    id="emailHelp"
-                    class="form-text text-decoration-none"
-                    >¿Olvidaste tu contraseña?</a
-                  >
-                </div>
-                <div class="col-12 mb-3 d-grid">
-                  <button id="btn-contact" class="btn btn-info">Enviar</button>
-                </div>
-                <div class="col-12 mb-3 d-grid text-center">
-                  <button class="btn btn-primary" id="btn-fb">
-                    <img
-                      src="/assets/login/logo-facebook.png"
-                      width="30"
-                      alt="logo-facebook"
-                      class="me-2"
-                    />
-                    <span>Inicia sesión con Facebook</span>
-                  </button>
-                </div>
-                <div class="col-12 d-grid text-center">
-                  <button class="btn btn-primary" id="btn-google">
-                    <img
-                      src="/assets/login/logo-google.png"
-                      width="30"
-                      alt="logo-google"
-                      class="me-2"
-                    />
-                    <span>Inicia sesión con Google</span>
-                  </button>
-                </div>
-                <div class="text-center col-12 my-3 d-grid">
-                  <span>¿No tienes cuenta?</span>
-                  <a href="#" class="fw-bold text-decoration-none crea-cuenta"
-                    >¡Crea una ahora!</a
-                  >
-                </div>
-              </form>
-            </div>
-            <div class="col-12 col-md-6 mb-3 text-center p-0">
-              <img
-                src="/assets/login/imagen-login.svg"
-                class="imagen-d"
-                alt="logo-derecha"
-              />
-            </div>
+          <div class="col-12 col-md-6">
+            <img
+              class="error404"
+              src="/assets/error.svg"
+              alt="ERROR 404 NOT FOUND"
+              title="ERROR 404 NOT FOUND"
+            />
           </div>
         </div>
-      </section>
+      </div>
     </main>
-
     <footer class="footer">
       <div class="container">
         <div class="row align-items-center">
@@ -259,51 +193,6 @@
         </div>
       </div>
     </footer>
-    <div
-      class="modal fade"
-      id="modalcontraseña"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              <img src="/assets/logo.png" width="100" alt="logo" />
-              Recuperar Contraseña
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="form-floating mb-3">
-              <input
-                maxlength="85"
-                type="email"
-                class="form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Ingresa tu email</label>
-            </div>
-            <div class="alert alert-warning text-center" role="alert">
-              Recibirás un correo electrónico para que puedas restablecer tu
-              contraseña.
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-dark" id="btn-modal">
-              Enviar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
     <div
       class="modal fade"
       id="suscription"
@@ -349,26 +238,5 @@
       </div>
     </div>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script>
-      (() => {
-        "use strict";
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll(".needs-validation");
-        // Loop over them and prevent submission
-        Array.from(forms).forEach((form) => {
-          form.addEventListener(
-            "submit",
-            (event) => {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
   </body>
 </html>

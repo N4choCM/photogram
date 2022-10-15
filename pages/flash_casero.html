@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inicia sesión o regístrate en Photogram, tu blog de fotografía."
+    />
+    <meta name="author" content="Nacho Campos Martí" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inicia Sesión</title>
+  </head>
+
+  <body
+    class="d-flex flex-column justify-content-between min-vh-100"
+    data-bs-spy="scroll"
+    data-bs-target="#gallery"
+    data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <header class="sticky-top">
+      <nav class="navbar fixed-top navbar1 navbar-expand-lg">
+        <div class="container">
+          <img
+            src="/assets/logo.png"
+            class="logo"
+            alt="logo"
+            id="logo-photogram"
+          />
+          <a id="title-font" class="navbar-brand navbar1" href="#">Photogram</a>
+          <button
+            class="navbar-toggler navbar1"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon navbar1"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header offcanvasnav">
+              <img src="/assets/logo.png" alt="logo" id="logo-photogram" />
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Photogram
+              </h5>
+              <button
+                type="button"
+                class="btn-close offcanvasnav"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body offcanvasnav expand-md pb-3">
+              <ul
+                class="navbar-nav justify-content-end text-center text-lg-end flex-grow-1 pe-3 mt-3 gap-3"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active link navbar-text"
+                    aria-current="page"
+                    href="/index.html"
+                    ><i class="bi bi-house-door"></i> Inicio</a
+                  >
+                </li>
+                <li class="nav-item nav-item-padding">
+                  <a
+                    class="nav-lin link navbar-text"
+                    aria-current="page"
+                    href="#"
+                    ><i class="bi bi-people"></i> Sobre nosotros</a
+                  >
+                </li>
+                <li class="nav-item me-1">
+                  <a
+                    class="nav-link link navbar-text"
+                    aria-current="page"
+                    href="/pages/gallery.html"
+                    ><i class="bi bi-camera"></i> Galería</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link link navbar-text"
+                    href="/pages/contact.html"
+                    ><i class="bi bi-envelope"></i> Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <b
+                    ><a
+                      class="nav-link link navbar-text"
+                      href="/pages/login.html"
+                      ><i class="bi bi-box-arrow-in-right"></i> Login</a
+                    ></b
+                  >
+                </li>
+                <li id="modal-navbar-border" class="nav-item">
+                  <a
+                    id="modal-navbar"
+                    class="nav-link link navbar-text"
+                    aria-current="page"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#suscription"
+                    class="btn btn-primary btn-sm m-1 btn-nav"
+                    type="submit"
+                    ><i class="bi bi-emoji-smile"></i> Suscríbete</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row mt-5 mb-3">
+          <div class="col-12">
+            <div class="card" style="width: 100%">
+              <img
+                src="/assets/articles/cisne.jpg"
+                class="card-img-top img-noticia"
+                alt="Cámara Nikon"
+                title="Cámara Nikon"
+              />
+              <div class="card-body p-md-5">
+                <h3 id="card-title" class="card-title">
+                  Cómo iluminar si solo tienes un flash y ningún accesorio más
+                  en casa
+                </h3>
+                <p id="card-text" class="card-text">
+                  Ha llegado el momento de probar todo lo que nos han regalado
+                  en navidades. Y seguro que si eres fotógrafo algún que otro
+                  accesorio te ha llegado. Uno de mis alumnos ha recibido un
+                  flash y un emisor. Nada más y nada menos. ¿Se puede empezar a
+                  hacer fotos solo con este material? Por supuesto que sí. Vamos
+                  a ver qué encontramos por casa para conseguir una buena
+                  fotografía con un flash. Lo que vamos a ver hoy es simplemente
+                  una pequeña práctica, un cómo se hizo de prueba para ver todo
+                  lo que se puede conseguir con un flash y un emisor. No tenemos
+                  fondos, ventanas, octas ni nada parecido. El flash desnudo,
+                  una cámara y muchas ganas de experimentar. El objetivo no es
+                  conseguir en este momento la fotografía más bonita, sino ver
+                  todo lo que podemos hacer con un flash y lo que encontremos
+                  por casa para empezar a experimentar y probar. Y de paso ir
+                  soltándose con la iluminación artificial. Así que doy las
+                  gracias a otro de mis mejores alumnos, con una curiosidad
+                  infinita, por cederme las fotos para publicarlas. Están hechas
+                  sin ninguna pretensión, solo con el ánimo de aprender.
+                </p>
+                <h4 id="card-title" class="text-center">
+                  Cómo hacer una fotografía con tan solo un flash
+                </h4>
+                <p id="card-text" class="card-text">
+                  Un flash es uno de los mejores accesorios que podemos tener
+                  los fotógrafos. Es estupendo controlar la luz a nuestro antojo
+                  sin depender del sol. Pero hay que conocer sus reglas, sus
+                  normas, para conseguir nuestro objetivo, que no es otro más
+                  que una buena fotografía. Nos hemos puesto a buscar cosas por
+                  su estudio para intentar fotografiar una pieza de su colección
+                  de porcelanas. La cuestión era hacer una imagen aceptable, sin
+                  pretensiones, con únicamente un flash y un emisor y todo lo
+                  que encontráramos. Al final hemos encontrado:
+                </p>
+                <ul id="card-text">
+                  <li id="card-text">Trípode de cámara.</li>
+                  <li id="card-text">Difusor olvidado.</li>
+                  <li id="card-text">Tela con demasiada textura.</li>
+                </ul>
+                <p id="card-text" class="card-text">
+                  Las fotografías que hemos conseguido no son para enmarcar,
+                  pero al menos han servido para ver todo lo que se puede
+                  conseguir. La clave para conseguir una buena fotografía es
+                  poder separar el flash, un Godox V1 de la cámara mediante el
+                  emisor Godox X2T. Esta es la clave para no tener problemas y
+                  evitar problemas. Otra cosa que debemos encontrar es un buen
+                  difusor. Lo ideal es una ventana de luz lo más grande posible,
+                  o un octa. Pero si no tenemos nada parecido siempre, podemos
+                  rebotar la luz en una pared blanca o en el techo de nuestra
+                  casa si no es muy alto. Hay que huir de la luz puntual de un
+                  flash para evitar los pequeños puntos de luz en las
+                  superficies reflectantes. Los pasos que vamos a ver a
+                  continuación permiten conseguir un buen resultado. En Xataka
+                  Foto ya hemos hablado del ABC de la iluminación. Y aquí lo
+                  vamos a aplicar. Personalmente, siempre me gusta hacer un
+                  disparo sin flash para comprobar que la luz ambiente no
+                  influye en el resultado final. Si el archivo sale negro, es
+                  perfecto. En esta ocasión hemos disparado a 1/125 f11 ISO 100.
+                  Como queríamos iluminar la pieza, hemos colocado el flash en
+                  el trípode y lo hemos puesto encima de la mesa para conseguir
+                  una iluminación cenital. Lo más alejado posible del objeto
+                  para dar una luz uniforme. Por supuesto hemos puesto el flash
+                  en modo Manual para tener nosotros todo el control. Podríamos
+                  elegir el modo TTL, pero no ofrece tantas posibilidades y no
+                  permite aprender cómo funciona la iluminación.
+                </p>
+                <p id="card-text" class="card-text">
+                  Así que lo hemos encendido, lo hemos sincronizado (con Godox
+                  es fundamental ponerlo en posición RX, la pantalla naranja)
+                  con el emisor X2T y hemos situado la potencia del flash en
+                  1/8. A todas luces ha sido excesivo. Decidimos bajar la
+                  potencia del flash a 1/16. Este paso es un error, pero
+                  queríamos ver cómo quedaba la luz. Y vemos claramente un
+                  problema. El flash desnudo (da igual que el cabezal sea
+                  redondo) es demasiado pequeño respecto al cisne, por lo que no
+                  queda más remedio que difuminar la luz para evitar un foco tan
+                  puntual... Podríamos haberlo alejado más, pero no teníamos los
+                  medios. Encontramos un difusor, uno de esos que luego son
+                  imposibles de cerrar a no ser que tengas la técnica del
+                  plegado en ocho depurada. Lo colocamos a mano (recuerdo que no
+                  tenemos nada más) y disparamos. La fotografía tiene la luz
+                  mucho más difusa, menos concentrada. Y como observáis, hemos
+                  perdido mucha luz. ¿Cómo lo solucionamos? ¿Abriendo más el
+                  diafragma? No, queremos esa profundidad. ¿Bajando la velocidad
+                  de obturación? Tampoco, no es especialmente relevante con la
+                  luz del flash. Nos quedan dos opciones:
+                </p>
+                <ol id="card-text">
+                  <li id="card-text">Subir la sensibilidad.</li>
+                  <li id="card-text">Subir la potencia del flash.</li>
+                </ol>
+                <p id="card-text" class="card-text">
+                  Al final optamos por la segunda opción. Si queremos que
+                  nuestro flash sea 'más potente' solo necesitamos subir el ISO.
+                  Así gastaremos menos batería que subiendo la potencia del
+                  flash y podremos hacer más disparos. El cisne ha mejorado
+                  notablemente. Pero la parte inferior ha quedado un poco más
+                  oscura de lo que nos gustaría. ¿Cómo lo solucionamos? Sabemos
+                  que sería ideal una tela blanca, o una cartulina del mismo
+                  color... pero no la tenemos. Así que aprovechamos la funda
+                  plateada del reflector. Y conseguimos nuestro objetivo. Solo
+                  nos queda mejorar el fondo. Con la ayuda de unas pinzas de la
+                  ropa y una tela con demasiada textura creamos un fondo que nos
+                  sirve para terminar la imagen con los recursos disponibles. Un
+                  poco de edición en el ordenador y listo. Es verdad que con una
+                  buena ventana con una jirafa, un fondo blanco limpio, un
+                  reflector y dos banderas tendríamos una fotografía mucho
+                  mejor. Y sobre todo no tendríamos que editarla en Photoshop...
+                  Pero el objetivo era aprender y aprovechar el material... Si
+                  estuvieras en la misma situación en tu casa ¿Cómo lo harías?
+                </p>
+              </div>
+            </div>
+            <h2 class="mt-5 mb-4 text-center">Comentarios</h2>
+            <div class="row row-cols-1 row-cols-md-2 mb-5">
+              <div class="col-12 col-md-6">
+                <div class="card" style="width: 100%">
+                  <div class="card-body">
+                    <b>
+                      <p id="comentarios-text" class="card-title">
+                        Laura Granados - 26/01/2022
+                      </p>
+                    </b>
+                    <small id="comentarios-text" class="card-text">
+                      Qué pasada de foto! Jamás pensé que se podría conseguir
+                      tanta calidad sin una iluminación de estudio profesional!
+                      :S
+                    </small>
+                  </div>
+                </div>
+                <div class="card mt-1" style="width: 100%">
+                  <div class="card-body">
+                    <b>
+                      <p id="comentarios-text" class="card-title">
+                        Javier Iglesias - 23/01/2022
+                      </p>
+                    </b>
+                    <small id="comentarios-text" class="card-text">
+                      Me encanta buscarle una nueva vida a objetos cotidianos.
+                      Así, no solo ahorramos dinero, sino que ayudamos al
+                      medioambiente. Paz y amor! :)
+                    </small>
+                  </div>
+                </div>
+                <div class="card mt-1" style="width: 100%">
+                  <div class="card-body">
+                    <b>
+                      <p id="comentarios-text" class="card-title">
+                        María José López - 20/01/2022
+                      </p>
+                    </b>
+                    <small id="comentarios-text" class="card-text">
+                      Wow! No merece la pena comprar un kit de iluminación
+                      profesional. Muchas gracias por las ideas!
+                      &#128513;</small
+                    >
+                  </div>
+                </div>
+                <div class="card mt-1" style="width: 100%">
+                  <div class="card-body">
+                    <b>
+                      <p id="comentarios-text" class="card-title">
+                        Manuel Varo - 15/01/2022
+                      </p>
+                    </b>
+                    <small id="comentarios-text" class="card-text">
+                      Cómo se te pueden ocurrir estas cosas? Eres un máquina!!
+                      &#128517;</small
+                    >
+                  </div>
+                </div>
+                <div class="card mt-1" style="width: 100%">
+                  <div class="card-body">
+                    <b>
+                      <p id="comentarios-text" class="card-title">
+                        Bruno Lapiedra - 12/01/2022
+                      </p>
+                    </b>
+                    <small id="comentarios-text" class="card-text">
+                      Qué bueno y qué interesante! A partir de ahora sacaré
+                      provecho de objetos caseros para mis fotos jeje</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <form class="needs-validation mt-4 mt-md-0" novalidate>
+                <div class="col-12 offset-md-6 col-md-6">
+                  <input
+                    maxlength="25"
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                    required
+                  />
+                </div>
+                <div class="col-12 mt-1">
+                  <textarea
+                    maxlength="800"
+                    class="form-control"
+                    rows="10"
+                    placeholder="Déjanos un comentario..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-3 offset-md-9 mt-1 d-grid">
+                  <button class="btn btn-info" id="btn-contact">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-2">
+            <img
+              class="footer-items"
+              id="logo-footer"
+              src="/assets/logo.png"
+              alt="Logo"
+              title="Logo"
+            />
+          </div>
+          <div class="col-12 col-md-2">
+            <a href="#"><i class="bi bi-facebook icon-photogram"></i></a>
+          </div>
+          <div class="col-12 col-md-2">
+            <a href="#"><i class="bi bi-twitter icon-photogram"></i></a>
+          </div>
+          <div class="col-12 col-md-2">
+            <a href="#"><i class="bi bi-linkedin icon-photogram"></i></a>
+          </div>
+          <div class="col-12 col-md-4 mt-5">
+            <p class="text-center text-md-end">
+              ¡Ya somos más de dos millones de usuarios! ¿A qué esperas para
+              unirte a nuestra comunidad? Photogram es muy fácil de usar y,
+              además, es el único sitio del mundo donde, además de compartir tus
+              maravillosas fotos, ¡conocerás las últimas novedades del mundo de
+              la fotografía!
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12">
+            <p>
+              <small>Photogram S.A. &copy; Todos los derechos reservados</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="modalcontraseña"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <img src="/assets/logo.png" width="100" alt="logo" />
+              Recuperar Contraseña
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                maxlength="85"
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Ingresa tu email</label>
+            </div>
+            <div class="alert alert-warning text-center" role="alert">
+              Recibirás un correo electrónico para que puedas restablecer tu
+              contraseña.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" id="btn-modal">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="suscription"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <img src="/assets/logo.png" width="100" alt="logo" />
+              Suscripción
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                maxlength="85"
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Ingresa tu email</label>
+            </div>
+            <div class="alert alert-warning text-center" role="alert">
+              Te enviaremos un correo de confirmacion.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="btn-modal">
+              ¡Suscripción!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (() => {
+        "use strict";
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
